@@ -40,7 +40,7 @@ function vaccineFind() {
     
       else{
         document.getElementById("vf").innerHTML =
-      "Vaccine Available"
+      "Vaccine Available 💉"
     var empTable = document.createElement('table');
         empTable.setAttribute('id', 'empTable');
         empTable.setAttribute('class','table table-sm table-bordered table-dark');  // table id.
