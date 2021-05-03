@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>vaccine centre finder</title>
+	<link rel="stylesheet" type="text/css" href="./style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  
+</head>
+<body >
+  <div  style="display: flex;justify-content: center; margin-bottom: 25px;">
+        <h1 id="vf"style="font-size: 100px; margin: auto;">VaccineFinder</h1>
+  </div>
+  <div id="main" style="display: ;">
+       <div id="typedtext"  >
+     
+          <div style="background-color: rgba(255,255,255,0.5); border-radius: 8px;">
+            <h1 style="color: rgba(0,0,0,.75);margin: 30px;">Enter pincode</h1>
+            <div style="display: flex;justify-content: center;">
+          <input id="pincode"type="number"  onkeypress='validate(event)' name="pincode" placeholder="Pincode">
+        </div>
+
+          </div>
+          <div style="background-color: rgba(255,255,255,0.5); border-radius: 8px;">
+            <h1 style="color: rgba(0,0,0,.75); margin: 30px;">Enter date</h1>
+            <div style="display: flex;justify-content: center;margin-bottom: 5px">
+          <input type="date"  id="txtDate"name="date" min="" max="2021-05-31" placeholder="Date">
+          </div>
+        </div>
+          <div id="button" style="margin-top: 25px;">
+            <button  class="btn btn-primary" onclick="vaccineFind()">Search Vaccine</button>
+          </div>
+    </div>
+</div>
+
+<div class="container">
+<div class="row">
+<div class="col-sm table-responsive" id="table" style="font-size: 10px;font-family: arial;">
+</div>
+</div>
+</div>
+<script type="text/javascript" src="script.js"></script>
+
+
+</body>
+</html>
